@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #170f1f;
@@ -12,7 +16,9 @@ body {
 
 header {
     background-color: #0d0912;
-    padding: 12px 8%;
+   
+    padding: 15px 8%;
+
 
     display: flex;
     align-items: center;
@@ -26,12 +32,11 @@ header {
 }
 
 .logo img {
-    width: 65px;
-    height: 65px;
+    width: 75px;
+    height: 75px;
     object-fit: cover;
     border-radius: 50%;
 }
-
 nav {
     display: flex;
     gap: 25px;
@@ -46,35 +51,49 @@ nav a:hover {
     color: #ff8fca;
 }
 
+
 .hero {
     min-height: 600px;
-    padding: 70px 8%;
+    padding: 80px 8%;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 60px;
 
-    background: linear-gradient(
-        120deg,
-        #170f1f,
-        #29112f,
-        #19102b
-    );
+    background:
+        radial-gradient(circle at 80% 30%, #542052 0%, transparent 35%),
+        linear-gradient(135deg, #170f1f, #25132b, #100b16);
 }
 
 .hero-text {
-    max-width: 520px;
+    max-width: 550px;
+}
+
+.subtitulo {
+    color: #ff8fca;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
 }
 
 .hero h1 {
-    font-size: 52px;
-    margin-bottom: 20px;
+    font-size: 58px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+
+    background: linear-gradient
+        90deg,
+        #ffffff,
+        #ffb4dc
 }
 
-.hero-text p {
-    line-height: 1.7;
+.texto-hero {
     color: #d8cbd8;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
 }
 
 .subtitulo {
@@ -84,53 +103,100 @@ nav a:hover {
 .botao {
     display: inline-block;
     margin-top: 25px;
-    padding: 13px 25px;
+    padding: 15px 30px;
 
     background-color: #ff5cad;
     color: white;
 
     text-decoration: none;
-    border-radius: 25px;
+    font-weight: bold;
+
+    border-radius: 30px;
+
+    transition: all 0.3s ease;
 }
 
+.botao:hover {
+    background-color: #ff8dcc;
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ff5cad;
+}
 .destaques {
-    padding: 70px 8%;
+    padding: 90px 8%;
     text-align: center;
     background-color: #100b16;
+}
+
+.destaques h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.descricao {
+    color: #bcaebe;
+    font-size: 17px;
+    margin-bottom: 45px;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 40px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 .card {
-    width: 280px;
-    padding-bottom: 25px;
-
-    background-color: #211526;
-    border-radius: 15px;
-    overflow: hidden;
+    width: 290px;
+    background: #211526;
 
     border: 1px solid #4f2c52;
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+
+    border-color: #ff75bb;
+
+    box-shadow:
+        0 0 15px #ff5cad,
+        0 0 35px rgba(255, 92, 173, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card-conteudo {
+    padding: 22px;
 }
 
 .card h3 {
-    margin: 20px 10px 8px;
     color: #ffacd4;
+    font-size: 21px;
+    margin-bottom: 10px;
 }
 
 .card p {
     color: #c9bdca;
+    margin-bottom: 15px;
 }
 
 .card span {
-    display: block;
-    margin-top: 12px;
     color: #ff75bb;
+    font-size: 18px;
     font-weight: bold;
 }
 
