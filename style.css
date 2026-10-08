@@ -45,3 +45,91 @@ nav a {
 nav a:hover {
     color: #ff8fca;
 }
+
+.hero {
+    min-height: 600px;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    background: linear-gradient(
+        120deg,
+        #170f1f,
+        #29112f,
+        #19102b
+    );
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    line-height: 1.7;
+    color: #d8cbd8;
+}
+
+.subtitulo {
+    color: #ff8fca;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+
+    background-color: #ff5cad;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.destaques {
+    padding: 70px 8%;
+    text-align: center;
+    background-color: #100b16;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 280px;
+    padding-bottom: 25px;
+
+    background-color: #211526;
+    border-radius: 15px;
+    overflow: hidden;
+
+    border: 1px solid #4f2c52;
+}
+
+.card h3 {
+    margin: 20px 10px 8px;
+    color: #ffacd4;
+}
+
+.card p {
+    color: #c9bdca;
+}
+
+.card span {
+    display: block;
+    margin-top: 12px;
+    color: #ff75bb;
+    font-weight: bold;
+}
